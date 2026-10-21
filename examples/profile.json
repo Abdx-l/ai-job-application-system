@@ -1,0 +1,11 @@
+{
+  "name":"Candidate Name",
+  "location":"Toronto",
+  "skills":["Python","SQL","Docker","REST APIs"],
+  "experience":[
+    "Built Python REST APIs backed by SQL.",
+    "Containerized development services with Docker."
+  ],
+  "minimum_score":0.25
+}
+
