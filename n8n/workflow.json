@@ -1,0 +1,11 @@
+{
+  "name":"Job posting intake handoff",
+  "nodes":[
+    {"id":"incoming","name":"Posting webhook","type":"n8n-nodes-base.webhook","typeVersion":2,"position":[200,200],"parameters":{"path":"job-postings","httpMethod":"POST"}},
+    {"id":"review","name":"Review queue","type":"n8n-nodes-base.respondToWebhook","typeVersion":1,"position":[500,200],"parameters":{"respondWith":"json","responseBody":"{\"status\":\"received-for-human-review\"}"}}
+  ],
+  "connections":{"Posting webhook":{"main":[[{"node":"Review queue","type":"main","index":0}]]}},
+  "active":false,
+  "settings":{}
+}
+
